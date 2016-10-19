@@ -122,7 +122,6 @@ def HWIN_Weights_Extract(Logins, maximum_pages=40):
         # go back to login page
         browser.get(url)
 
-HWIN_Weights_Extract(Logins, 28)
 
 
 
