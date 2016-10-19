@@ -80,7 +80,7 @@ def HWIN_Weights_Extract(Logins, maximum_pages=40):
                 # extract "Date Shipped" for each manifest
                 Date_Shipped = browser.find_elements_by_tag_name('b')[7].text
 
-                # concatenate table data with Date and Generator ID
+                # concatenate table data with Date, Generator ID, and Address
                 for item in waste_info:
                     item.insert(0, Date_Shipped)
                     item.insert(1, GeneratorID)
