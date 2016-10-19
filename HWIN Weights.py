@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from dateutil import parser
 
 # This is the Login information
-Logins = [("joe182", "cml"), ("CAN MED LAB", "EG64REQQ")]
+Logins = [("riley123", "test"), ("riley456", "test")]
 
 def HWIN_Weights_Extract(Logins, maximum_pages=40):
 
