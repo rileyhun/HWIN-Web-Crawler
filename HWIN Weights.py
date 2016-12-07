@@ -123,7 +123,7 @@ def HWIN_Weights_Extract(Logins, maximum_pages=40):
 Logins = [("riley123", "test"), ("riley456", "test")]
 
 # Call function
-HWIN_Weights_Extract([('roh57', 'cml')], 1)
+HWIN_Weights_Extract(Logins, 1)
 
 
 
