@@ -6,9 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from dateutil import parser
 
-# This is the Login information
-Logins = [("riley123", "test"), ("riley456", "test")]
-
 def HWIN_Weights_Extract(Logins, maximum_pages=40):
 
     Accounts = len(Logins)
@@ -122,6 +119,11 @@ def HWIN_Weights_Extract(Logins, maximum_pages=40):
         # go back to login page
         browser.get(url)
 
+# This is the Login information
+Logins = [("riley123", "test"), ("riley456", "test")]
+
+# Call function
+HWIN_Weights_Extract([('roh57', 'cml')], 1)
 
 
 
