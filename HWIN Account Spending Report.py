@@ -73,7 +73,7 @@ def HWIN_Spending_Report(GeneratorID, Username, Password, Max_Pages):
                 By.CSS_SELECTOR, "a[onclick*='return frmSubmit("+str(page+2)+")']")))
                 next_page.click()
             except Exception as e:
-                pass
+                break
 
         # flatten list and convert to pandas dataframe
         all_page_data = [item for sublist in all_page_data for item in sublist]
@@ -124,4 +124,4 @@ Username = data['Username']
 Password = data['Password']
 ID = data['Generator ID']
 
-HWIN_Spending_Report(ID, Username, Password, 50)
+HWIN_Spending_Report(ID, Username, Password, 150)
